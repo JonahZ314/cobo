@@ -31,7 +31,7 @@ public class Magpie2
 	public String getResponse(String statement)
 	{
 		String response = "";
-		if (trim(statement).length == 0) {
+		if (statement.trim().length() == 0) {
 		    response = "Say something, please.";
 		}
 		else if (statement.indexOf("no") >= 0)
