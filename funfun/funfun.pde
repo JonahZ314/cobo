@@ -12,8 +12,15 @@ void draw(){
   //rotate(HALF_PI);
   //image(floor, width/2 - floor.width/2, height - floor.height/4);
  
-  translate(width, 0);
+ pushMatrix();
+  //translate(width, 0);
   rotate(HALF_PI);
+  translate(0, -height);
   image(floor, 100, 100);
+  popMatrix();
+  pushMatrix();
+  rotate(HALF_PI);
+  translate(0, -40);
   image(floor, 20, 20);
+  popMatrix();
 }
